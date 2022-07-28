@@ -9,9 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
     "next": "12.2.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-bootstrap": "^2.4.0",
+    "react-bootstrap-icons": "^1.8.4",
+    "react-dom": "18.2.0",
+    "react-loader-spinner": "^5.1.7-beta.1",
+    "react-use-downloader": "^1.1.7",
+    "typewriter-effect": "^2.19.0",
+    "ytdl-core": "^4.11.0",
+    "ytsr": "^3.8.0"
   },
   "devDependencies": {
     "eslint": "8.20.0",

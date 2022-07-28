@@ -2,6 +2,22 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
+
+module.exports = {
+  async headers() {
+    return [
+      {
+        source: "/api/video/:name",
+        headers: [
+          {
+            key: "name",
+            value: ":name",
+          },
+        ],
+      },
+    ];
+  },
+};
