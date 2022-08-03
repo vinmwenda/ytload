@@ -7,8 +7,9 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: white !important;
+  text-decoration: none !important;
+  text-decoration-style: none;
 }
 
 * {
@@ -19,23 +20,175 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
   }
 }
+
 .bold {
-  font-size: larger;
+  font-size: 2rem;
+
   font-weight: 700;
 }
-.center {
-  align-items: center;
 
-  justify-content: center;
-  text-align: center;
+.center {
+  align-items: center !important;
+
+  justify-content: center !important;
+  text-align: center !important;
 }
+
 .font {
-  font-family: Lobster;
+  font-family: OverPass;
   font-weight: 500;
   font-size: large;
+}
+
+.formatRow {
+  text-align: end;
+  border-right: 2px solid black;
+}
+
+.preloader-none {
+  display: none;
+}
+
+.appName {
+  color: white;
+
+  font-weight: 600;
+  font-size: larger;
+  font-style: italic;
+}
+
+.loader {
+  border-right: 16px solid #ff0c0c;
+  border-left: 16px solid #fa6c0e;
+  border-top: 16px solid #e7cb28;
+  border-bottom: 16px solid #cee40c;
+  text-align: center;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  -webkit-animation: spin 2s linear infinite;
+
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.con {
+  border: 1px solid;
+}
+
+.errmsg {
+  padding: 5px 10px;
+  background-color: #ff0c0c;
+  color: #ffff;
+  border-radius: 8px;
+  font-size: larger;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.channelInfo {
+  color: #555555;
+  font-size: 15px;
+}
+
+.rel {
+  position: relative;
+}
+
+.rel:hover .abs {
+  display: none;
+}
+
+.abs {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  z-index: 1;
+}
+
+.downloadbtn {
+  display: flex;
+  justify-content: center;
+}
+
+.dwnldoutpt {
+  border: 2px solid #808080;
+  height: max-content;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  overflow-wrap: break-word;
+  position: absolute;
+  z-index: 2;
+  background-color: #ffffff;
+  right: 0;
+  margin: auto;
+}
+
+.title {
+  border-radius: 5px;
+  display: none;
+
+  /* z-index: 2; */
+}
+
+.show-title:hover .title {
+  display: contents;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.progressBar {
+  background-color: red;
+  height: 5px;
+  width: 50%;
 }

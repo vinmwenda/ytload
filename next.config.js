@@ -13,8 +13,8 @@ module.exports = {
         source: "/api/video/:name",
         headers: [
           {
-            key: "name",
-            value: ":name",
+            key: "X-Content-Type-Options",
+            value: "nosniff",
           },
         ],
       },

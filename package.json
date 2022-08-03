@@ -17,7 +17,10 @@
     "react-bootstrap-icons": "^1.8.4",
     "react-dom": "18.2.0",
     "react-loader-spinner": "^5.1.7-beta.1",
+    "react-player": "^2.10.1",
+    "react-toastify": "^9.0.7",
     "react-use-downloader": "^1.1.7",
+    "react-youtube": "^9.0.3",
     "typewriter-effect": "^2.19.0",
     "ytdl-core": "^4.11.0",
     "ytsr": "^3.8.0"
